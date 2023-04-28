@@ -1,6 +1,10 @@
-const navBarItems = () => {
+import React from 'react'
+const navBarItems = (props) => {
+
     return (
-        <a className="nav-link" href="#">Features</a>
+        <li className="nav-item">
+            <p className="nav-link active" href="#">{props.itemsNav}</p>
+        </li>
     );
 };
 
